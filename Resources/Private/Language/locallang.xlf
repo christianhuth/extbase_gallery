@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_extbasegallery_domain_model_gallery">
-				<source>Gallerie</source>
+				<source>Galerie</source>
 			</trans-unit>
 			<trans-unit id="tx_extbasegallery_domain_model_gallery.name">
 				<source>Name</source>
@@ -28,7 +28,7 @@
 				<source>Bilder</source>
 			</trans-unit>
 			<trans-unit id="tx_extbasegallery_domain_model_gallery.allgalleries">
-				<source>Alle Gallerien</source>
+				<source>Alle Galerien</source>
 			</trans-unit>
 			<trans-unit id="tx_extbasegallery.pagination">
 				<source>Seite %s von %s.</source>
