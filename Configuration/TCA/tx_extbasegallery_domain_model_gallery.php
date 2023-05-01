@@ -124,7 +124,7 @@ return [
 								],
 						],
 						'fallbackCharacter' => '-',
-						'eval' => 'required, uniqueInSite',
+						'eval' => 'required',
 				],
 		],
 		
