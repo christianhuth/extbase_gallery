@@ -24,7 +24,7 @@ return [
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, description, albumdate, images',
 	],
 	'types' => [
-		'1' => ['showitem' => '	gallery, name, description, albumdate, 
+		'1' => ['showitem' => '	gallery, name, slug, description, albumdate, 
 								--div--;LLL:EXT:extbase_gallery/Resources/Private/Language/locallang_tabs.xlf:images, images, 
 								--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, hidden, starttime, endtime,
 								--div--;LLL:EXT:extbase_gallery/Resources/Private/Language/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource'
@@ -109,6 +109,24 @@ return [
 					'allowLanguageSynchronization' => true,
 				],
 			]
+		],
+
+		'slug' => [
+				'exclude' => true,
+				'label' => 'URL Segment',
+				'config' => [
+						'type' => 'slug',
+						'prependSlash' => false,
+						'generatorOptions' => [
+								'fields' => ['name'],
+								'prefixParentPageSlug' => true,
+								'replacements' => [
+										'/' => '',
+								],
+						],
+						'fallbackCharacter' => '-',
+						'eval' => 'required, uniqueInSite',
+				],
 		],
 		
 		'gallery' => array(
