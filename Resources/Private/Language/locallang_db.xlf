@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-04-05T11:27:18Z" product-name="extbase_gallery">
+		<header/>
+		<body>
+			<trans-unit id="pi1_title">
+				<source>Extbase Gallery</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_gallery">
+				<source>Gallerie:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_gallery.albums">
+				<source>Alben:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_gallery.description">
+				<source>Beschreibung:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_gallery.name">
+				<source>Name:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_gallery.title">
+				<source>Gallerie</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_album">
+				<source>Album:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_album.albumdate">
+				<source>Aufnahmedatum:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_album.description">
+				<source>Beschreibung:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_album.images">
+				<source>Bilder:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_album.name">
+				<source>Name:</source>
+			</trans-unit>
+			<trans-unit id="tx_extbasegallery_domain_model_album.title">
+				<source>Album</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

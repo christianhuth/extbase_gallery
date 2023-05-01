@@ -1,0 +1,19 @@
+<html 	xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+		xmlns:balu="http://typo3.org/ns/Balumedien/ExtbaseGallery/ViewHelpers"
+		data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+<f:section name="content">
+	<f:flashMessages />
+	<hr class="up">
+		<f:link.action action="list" controller="Gallery"><f:translate key="tx_extbasegallery_domain_model_gallery.allgalleries" /></f:link.action> »
+		<f:link.action action="show" controller="Gallery" arguments="{gallery : gallery}">{gallery.name}</f:link.action> »
+		<f:link.action action="show" controller="Album" arguments="{album : album}">{album.name}</f:link.action>
+	<hr class="down">
+	<div class="row">
+		<f:for each="{album.images}" as="image">
+			<f:render partial="Image/ListItem" arguments="{image: image}" />
+		</f:for>
+	</div>
+</f:section>
+</html>

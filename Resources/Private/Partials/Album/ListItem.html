@@ -1,0 +1,27 @@
+<f:if condition="{album.images}">
+	<f:then>
+		<div class="col-md-6 col-sm-12 col-xs-12 album listItem">
+			<div class="row">
+				<div class="left">
+					<f:link.action action="show" controller="Album" arguments="{album : album}">
+						<f:for each="{album.images}" as="image" iteration="imageIterator">
+							<f:if condition="{imageIterator.isFirst}">
+								<f:then>
+									<f:image image="{image}" height="{settings.imageHeight}" width="{settings.imageWidth}" />
+								</f:then>
+							</f:if>
+						</f:for>
+					</f:link.action>
+				</div>
+				<div class="albumname">
+					<f:link.action action="show" controller="Album" arguments="{album : album}">
+						{album.name}
+					</f:link.action>
+					<br>
+					<p><f:format.date format="d.m.Y">{album.albumdate}</f:format.date></p>
+					<p><f:count>{album.images}</f:count> Bilder</p>
+				</div>
+			</div>
+		</div>
+	</f:then>
+</f:if>

@@ -1,0 +1,14 @@
+<div class="col-md-3 col-sm-4 col-xs-4 col image listItem">	
+	<f:if condition="{settings.fancybox}">
+		<f:then>
+			<f:link.typolink parameter='<f:uri.image image="{image}" />' class="jnlightbox" additionalAttributes="{rel: 'lightbox[extbase_gallery]'}">
+				<f:image image="{image}"  height="{settings.imageHeight}" width="{settings.imageWidth}" />
+			</f:link.typolink>
+		</f:then>
+		<f:else>
+			<f:link.typolink parameter='<f:uri.image image="{image}" />' target="_blank">
+				<f:image image="{image}"  height="{settings.imageHeight}" width="{settings.imageWidth}" />
+			</f:link.typolink>
+		</f:else>
+	</f:if>
+</div>

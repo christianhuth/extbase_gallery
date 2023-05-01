@@ -1,0 +1,32 @@
+<f:if condition="{gallery.albums}">
+	<f:then>
+		<div class="col-md-6 col-sm-12 col-xs-6 gallery listItem">
+			<div class="row">
+				<div class="left">
+					<f:link.action action="show" arguments="{gallery : gallery}">
+						<f:for each="{gallery.albums}" as="album" iteration="albumIterator">
+							<f:if condition="{albumIterator.isFirst}">
+								<f:then>
+									<f:for each="{album.images}" as="image" iteration="imageIterator">
+										<f:if condition="{imageIterator.isFirst}">
+											<f:then>
+												<f:image image="{image}" height="{settings.imageHeight}" width="{settings.imageWidth}" />
+											</f:then>
+										</f:if>
+									</f:for>
+								</f:then>
+							</f:if>
+						</f:for>
+					</f:link.action>
+				</div>
+				<div class="galleryname">
+					<f:link.action action="show" arguments="{gallery : gallery}">
+						{gallery.name}
+					</f:link.action>
+					<br>
+					<p><f:count>{gallery.albums}</f:count> Alben</p>
+				</div>
+			</div>
+		</div>
+	</f:then>
+</f:if>
